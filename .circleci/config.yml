@@ -8,7 +8,7 @@ workflows:
     jobs:
       - aws-ecr/build-and-push-image:
           context: aws-dev
-          create-repo: true
+          create-repo: false
           dockerfile: Dockerfile
           path: .
           repo: circleci-ecr-demo
